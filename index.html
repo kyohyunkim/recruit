@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/index.css" rel="stylesheet">
+    <script defer src="js/index.js"></script>
+</head>
+<body onload = "showImage()">
+    <header></header>
+    <main>
+        <div class="bg_intro" id="bg_intro">
+            <div class="blur"><img id = "blurImg" src="img/a2.jpg"></div>
+            <mask id="svgmask">
+                <circle id="svg__circle" class="svg__circle" cx="960" cy="468.5" r="48" style="fill: #fff;"></circle>
+            </mask>
+            <div class="bg_mask" id="bg_mask"><img id = "introImg" src="img/a1.jpg"></div>
+            <div class="rotate_text" id="rotate_text"><img src="img/recruit3.svg"></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
