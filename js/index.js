@@ -32,10 +32,14 @@ function showImage(){
     objImg2.src = imgArray2[imgNum];
 }
 
+const font_dumy = document.querySelector(".font_dumy");
+const font1 = document.querySelector(".font1");
+const font2 = document.querySelector(".font2");
+let dumyHei = font_dumy.offsetTop;
 
 let pos = {y:0, y2:0, state:''}
 window.addEventListener('scroll',function(){
-
+    let aa = 1;
     let yy = this.scrollY;
     pos.y = window.scrollY;
     if(pos.y > pos.y2){
@@ -65,6 +69,23 @@ window.addEventListener('scroll',function(){
     `;
     }else{
         rotate_text.style = "animation-play-state: start;"
+    }
+
+    if(window.scrollY > 2200){
+        introImg.style = `opacity:0;transition:1s;`
+    }else{
+        introImg.style = `opacity:1;transtion:1s;` 
+    }
+
+    if(window.scrollY > dumyHei + window.innerHeight/2){
+        font1.classList.add('active');
+    }else{
+        font1.classList.remove('active');
+    }
+    if(window.scrollY > dumyHei + window.innerHeight){
+        font2.classList.add('active');
+    }else{
+        font2.classList.remove('active');
     }
     
 });
