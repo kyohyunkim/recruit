@@ -33,8 +33,6 @@ function showImage(){
 }
 
 
-
-
 let pos = {y:0, y2:0, state:''}
 window.addEventListener('scroll',function(){
 
