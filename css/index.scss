@@ -1,6 +1,7 @@
 *{
     margin:0;padding:0;list-style:none;text-decoration:none;
 }
+body,html{overflow: hidden;}
 body{position: relative;}
 .bg_intro{
     height: 400vh;
@@ -37,7 +38,7 @@ body{position: relative;}
         animation:rota 10s infinite;
         animation-fill-mode: none;
         animation-timing-function: linear;
-        transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+        animation-play-state: start;
     }
     @keyframes rota {
         100%{transform:translate(-50%,-50%) rotate(360deg);}

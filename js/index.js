@@ -57,27 +57,23 @@ window.addEventListener('scroll',function(){
     
     svg__circle.style = `width:${100 + this.scrollY}px;height:${100+this.scrollY}px;`;
     bg_mask.style = `clip-path: circle(${50 + this.scrollY/2}px at center);`
-    
-    console.log(yy)
-    console.log(this.scrollY)
 
-    if(window.scrollY > 0){
+    if(window.scrollY > 10){
         rotate_text.style = `
         width:${150 + this.scrollY * 1.5}px;height:${150 + this.scrollY * 1.5}px;
         transform:translate(-50%,-50%) rotate(${this.scrollY / 2}deg);
         animation-play-state: paused;
-    `;
-    }else{
+    ` }else{
         rotate_text.style = "animation-play-state: start;"
-    }
+    };
 
-    if(window.scrollY > 2200){
+    if(window.scrollY > dumyHei  - this.window.innerHeight){
         introImg.style = `opacity:0;transition:1s;`
     }else{
         introImg.style = `opacity:1;transtion:1s;` 
     }
 
-    if(window.scrollY > dumyHei + window.innerHeight/2){
+    if(window.scrollY > dumyHei){
         font1.classList.add('active');
     }else{
         font1.classList.remove('active');

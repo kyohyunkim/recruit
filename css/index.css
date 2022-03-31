@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+body, html {
+  overflow: hidden;
+}
+
 body {
   position: relative;
 }
@@ -68,8 +72,8 @@ body {
           animation-fill-mode: none;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-          transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-animation-play-state: start;
+          animation-play-state: start;
 }
 
 @-webkit-keyframes rota {
